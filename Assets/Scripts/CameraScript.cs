@@ -35,7 +35,7 @@ public class CameraScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, myPositions[posIndex], step);
+        transform.position = Vector3.Lerp(transform.position, myPositions[posIndex], 0.01f);
         transform.rotation = Quaternion.Slerp(transform.rotation, myRotations[rotIndex], 0.01f);
     }
 
