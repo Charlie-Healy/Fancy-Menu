@@ -27,8 +27,8 @@ public class CameraScript : MonoBehaviour
     void Start()
     {
         step = Time.deltaTime;
-        posIndex = 0;
-        rotIndex = 0;
+        posIndex = 5;
+        rotIndex = 5;
         
     }
 

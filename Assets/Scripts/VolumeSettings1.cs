@@ -51,22 +51,7 @@ public class VolumeSettings1 : MonoBehaviour
         PlayerPrefs.SetFloat("SFXVolume", volume);
     }
 
-    //public void OnButtonPress()
-    //{
-        //if (muted == false)
-        //{
-            //muted = true;
-            //AudioListener.pause = true;
-        //}
-        //else
-        //{
-            //muted = false;
-            //AudioListener.pause = false;
-        //}
-
-        //SetMusicVolume();
-        //SetSFXVolume();
-    //}
+    
 
     private void LoadVolume()
     {
