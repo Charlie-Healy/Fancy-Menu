@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.010403737, g: 0.009463742, b: 0.005109184, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7400,7 +7400,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -7703,8 +7703,8 @@ Transform:
   m_GameObject: {fileID: 411185091}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -960.71265, y: -539.8179, z: -6.2157483}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1167, y: -673, z: -6}
+  m_LocalScale: {x: 1.2046613, y: 1.2046613, z: 1.2046613}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1346424330}
@@ -10806,11 +10806,11 @@ MonoBehaviour:
   quaternionTime: 0
   myPositions:
   - {x: 0, y: 0.14, z: -7.106}
-  - {x: 0, y: 0.14, z: -3}
+  - {x: 0, y: 0.14, z: -7.106}
   - {x: 0, y: 0.14, z: -6}
   - {x: 0, y: 0.14, z: 5}
   - {x: 6, y: 0.14, z: -6}
-  - {x: 0, y: 0.14, z: -7.106}
+  - {x: 0, y: 0.14, z: -3}
   - {x: -4, y: 0.14, z: -6}
   - {x: 0, y: 6, z: -6}
   myRotations:
