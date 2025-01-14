@@ -7,54 +7,40 @@ using UnityEngine.Audio;
 
 public class MusicVolumeSlider : MonoBehaviour
 {
+    public AudioSource musicSource;
+    public AudioSource musicSource2;
+    public AudioSource sfxSource;
 
-    
+    public Toggle AudioToggle;
+
     private bool muted = false;
     // Start is called before the first frame update
     void Start()
     {
-        
-        if (!PlayerPrefs.HasKey("muted"))
+        if (PlayerPrefs.GetInt("music", 1) == 1)
         {
-            PlayerPrefs.SetInt("muted", 0);
-            Load();
+            AudioToggle.isOn = true;
         }
         else
         {
-            Load();
+            AudioToggle.isOn = false;
         }
     }
 
-   
-    public void OnButtonPress()
+    public void Toggle(bool value)
     {
-        if(muted == false)
+        musicSource.mute = value;
+        sfxSource.mute = value;
+        musicSource2.mute = value;
+        
+        if(value == true)
         {
-            muted = true;
-            AudioListener.pause = true;
-            
+            PlayerPrefs.SetInt("music", 1);                     
         }
         else
         {
-            muted = false;
-            AudioListener.pause = false;
-            
+            PlayerPrefs.SetInt("music", 0);
         }
-
-        Save();
     }
 
-    
-
-    private void Load()
-    {
-        
-        muted = PlayerPrefs.GetInt("muted") == 1;
-    }
-
-    private void Save()
-    {
-        
-        PlayerPrefs.SetInt("muted", muted ? 1 : 0);
-    }
 }
